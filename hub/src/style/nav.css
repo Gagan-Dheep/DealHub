@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .logo img{
     width: 100px;
 }
@@ -5,8 +10,9 @@
 .main-header .container {
     display: flex;
     align-items: center;
+    padding: 6px 10px;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    /* border-bottom: 1px solid rgba(0,0,0,0.1); */
     background: rgb(238, 241, 241);
 }
 .main-header .container .logo{

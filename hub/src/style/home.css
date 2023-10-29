@@ -1,0 +1,44 @@
+
+.home .container{
+    display: flex;
+    background: rgb(230, 243, 251);
+    background-size: cover;
+    align-items: center;
+    padding: 30px 30px;
+    margin-bottom: 40px;
+}
+.home .container .content{
+    flex: 35%;
+}
+.home .container .image{
+    flex: 35%;
+}
+.home .container .content h3{
+font-size: 40px;
+color: #840752;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home .container .content p{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home .container .content .button{
+    margin-top: 30px;
+
+}
+.home .container .content .button .Shop-link{
+    color: white;
+    background:  #840752;
+    padding: 8px 12px;  
+    border-radius: 10px;
+    text-decoration: none;
+}
+.home .container .content .button .Shop-link:hover{
+background: white;
+color: #840752;
+}
+.home .container .image{
+    filter: drop-shadow(5px 5px 5px rgb(48, 48, 48));
+    
+}
