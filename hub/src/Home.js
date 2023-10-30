@@ -21,6 +21,38 @@ const Home = () => {
       </div>
    </div>
 
+   <div className='about'>
+   <h2 className='heading'>About DealHub</h2>
+    <div className='container'>
+        <div className='image'>
+            <img src='./images/istockphoto-1333053202-612x612-removebg-preview.png' alt='watch'></img>
+        </div>
+        <div className='content'>
+          <p>Our mission at DealHub is to empower individuals and businesses to connect and trade in a convenient and secure online environment. We believe that everyone has something valuable to offer, and we're here to help you unlock the potential of your unused items or discover hidden gems at unbeatable prices.</p>
+        </div>
+    </div>
+   </div>
+   
+   <div className='contact'>
+   <h2 className='heading'>Contact Us</h2>
+    <div className='container'>
+      <div className='image'>
+        <img src='./images/contact-us-illustration-scaled.png' alt='contact'/>
+      </div>
+
+      <div className='form'>
+        <form>
+          <input type='text' placeholder='text'></input>
+          <input type='email' placeholder='email'></input>
+          <input type='phone' placeholder='phone'></input>
+          <textarea type='text' placeholder='message'></textarea>
+          <button type='submit'>Submit</button>
+
+        </form>
+      </div>
+    </div>
+   </div>
+
   </>
   )
 }

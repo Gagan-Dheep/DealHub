@@ -1,6 +1,7 @@
 
 .home .container{
     display: flex;
+    flex-wrap: wrap;
     background: rgb(230, 243, 251);
     background-size: cover;
     align-items: center;
@@ -21,6 +22,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 .home .container .content p{
     font-size: 25px;
+    margin-top: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .home .container .content .button{
@@ -40,5 +42,41 @@ color: #840752;
 }
 .home .container .image{
     filter: drop-shadow(5px 5px 5px rgb(48, 48, 48));
+    
+}
+
+/* about section */
+
+.about .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about .container .image{
+    flex: 35%;
+}
+.about .container .content{
+    flex: 35%;
+}
+.heading{
+    font-size: 33px;
+    color: #840752;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.about .container .content p{
+    flex: 1 1 350px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* contact section */
+.contact .container .image img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
     
 }
