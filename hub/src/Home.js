@@ -32,6 +32,17 @@ const Home = () => {
         </div>
     </div>
    </div>
+
+   <div className='newsletter'>
+    <h2 className='heading'>SUBCRIBE FOR NEW FEATURES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque aperiam adipisci nesciunt
+    voluptate dicta autem quibusdam iure sunt. Totam.</p>
+
+    <form>
+      <input type='email' placeholder='Enter Your Email'></input>
+      <input type='submit' placeholder='submit'></input>
+    </form>
+      </div>
    
    <div className='contact'>
    <h2 className='heading'>Contact Us</h2>
@@ -42,12 +53,19 @@ const Home = () => {
 
       <div className='form'>
         <form>
-          <input type='text' placeholder='text'></input>
-          <input type='email' placeholder='email'></input>
-          <input type='phone' placeholder='phone'></input>
-          <textarea type='text' placeholder='message'></textarea>
+          <div className='link'>
+            <input type='text' placeholder='text'></input>
+          </div>
+          <div className='link'>
+            <input type='email' placeholder='email'></input>
+          </div>
+          <div className='link'>
+            <input type='phone' placeholder='phone'></input>
+          </div>
+          <div className='link'>
+            <textarea type='text' placeholder='message'></textarea>
+          </div>
           <button type='submit'>Submit</button>
-
         </form>
       </div>
     </div>

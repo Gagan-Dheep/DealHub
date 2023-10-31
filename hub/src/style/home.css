@@ -70,13 +70,51 @@ color: #840752;
 .about .container .content p{
     flex: 1 1 350px;
     font-size: 25px;
+    margin-bottom: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* newsletter section */
+.newsletter p{
+    font-size: 25px;
+    padding: 33px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+   
+}
+.newsletter form input[type="email"] {
+    padding: 10px 25px;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.newsletter form input[type="submit"]{
+    font-size: 18px;
+    background-color: #840752;
+    border-radius: 10px;
+    border: #840752;
+    padding: 0 7px ;
+    color: white;
+}
 /* contact section */
 .contact .container .image img {
     width: 700px;
     height: 500px;
     object-fit: cover;
     
+}
+.contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .container .form{
+    justify-content: center;
 }
