@@ -51,25 +51,24 @@ const Home = () => {
         <img src='./images/contact-us-illustration-scaled.png' alt='contact'/>
       </div>
 
-      <div className='form'>
-        <form>
-          <div className='link'>
-            <input type='text' placeholder='text'></input>
-          </div>
-          <div className='link'>
-            <input type='email' placeholder='email'></input>
-          </div>
-          <div className='link'>
-            <input type='phone' placeholder='phone'></input>
-          </div>
-          <div className='link'>
-            <textarea type='text' placeholder='message'></textarea>
-          </div>
-          <button type='submit'>Submit</button>
+        <form className='form'>
+                <div className="sec">
+                    <input type="text" required placeholder="name"></input>
+                </div>
+                <div className="sec">
+                    <input type="email"  required placeholder="Email"></input>
+                </div>
+                <div className="sec">
+                    <input type="tel" required max="10" placeholder="Phone no."></input>
+                </div>
+                <div className="sec">
+                    <textarea  rows="2" placeholder="enter text"></textarea>
+                </div>
+               <button className="submit"  type="submit">SUBMIT</button>
         </form>
       </div>
     </div>
-   </div>
+
 
   </>
   )
