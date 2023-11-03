@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './style/home.css'
+import Footer from './component/Footer'
 
 const Home = () => {
   return (
@@ -69,7 +70,7 @@ const Home = () => {
       </div>
     </div>
 
-
+<Footer/>
   </>
   )
 }
