@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './style/home.css'
 import Footer from './component/Footer'
-
+import Contact from './component/Contact'
 const Home = () => {
   return (
    <>
@@ -19,6 +19,7 @@ const Home = () => {
         <div className='image'>
             <img src='./images/istockphoto-1333053202-612x612-removebg-preview.png' alt='watch'></img>
         </div>
+
       </div>
    </div>
 
@@ -52,7 +53,7 @@ const Home = () => {
         <img src='./images/contact-us-illustration-scaled.png' alt='contact'/>
       </div>
 
-        <form className='form'>
+        {/* <form className='form'>
                 <div className="sec">
                     <input type="text" required placeholder="name"></input>
                 </div>
@@ -66,7 +67,8 @@ const Home = () => {
                     <textarea  rows="2" placeholder="enter text"></textarea>
                 </div>
                <button className="submit"  type="submit">SUBMIT</button>
-        </form>
+        </form> */}
+        <Contact />
       </div>
     </div>
 
