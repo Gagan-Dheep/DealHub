@@ -1,0 +1,38 @@
+*{
+    color: #840752;
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 7px;
+    margin-top: 20px;
+    background: rgb(238, 241, 241);
+}
+.footer .container .box{
+  flex: 1 1 400px;
+  margin: 10px 10px;
+}
+.footer .container .box .link{
+    display: flex;
+    text-decoration: none;
+}
+.footer .container .box a{
+    display: flex;
+    text-decoration: none;
+
+}
+.footer .container .foottext{
+    font-size: 20px;
+    color:  black;
+    text-decoration:2px solid underline;
+    text-transform: capitalize;
+}
+.copyright{
+    font-size: 20px;
+    color:  black;
+    padding: 10px 0;
+    text-align: center;
+    background: rgb(238, 241, 241);
+border-top: 1px solid rgba(0,0,0,0.2);
+}
