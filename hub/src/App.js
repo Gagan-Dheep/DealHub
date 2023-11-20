@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Nav/>
         <Rout/>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
     </>
   );
