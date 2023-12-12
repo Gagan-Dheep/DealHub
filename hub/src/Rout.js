@@ -1,8 +1,8 @@
 import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 import Home from './Home'
-import Signin from './component/Signin'
-import Signup from './component/Signup'
+import SignIn from './component/SignIn'
+import SignUp from './component/SignUp'
 import Product from "./Product"
 // import NoNavFooterLayout from './NoNavFooterLayout';
 const Rout = () => {
@@ -11,8 +11,8 @@ const Rout = () => {
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/product' element={<Product/>} />
-            <Route  path='/sign-in' element={ <Signin/>}/>
-            <Route path='/sign-up' element={<Signup/>}/>
+            <Route  path='/sign-in' element={ <SignIn/>}/>
+            <Route path='/sign-up' element={<SignUp/>}/>
         </Routes>
         
           </>
