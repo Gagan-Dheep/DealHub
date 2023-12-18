@@ -5,12 +5,12 @@ import SignIn from './component/SignIn'
 import SignUp from './component/SignUp'
 import Product from "./Product"
 // import NoNavFooterLayout from './NoNavFooterLayout';
-const Rout = () => {
+const Rout = ({detail,product,view}) => {
   return (
     <>
         <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='/product' element={<Product/>} />
+            <Route path='/product' element={<Product product={product} detail={detail} view={view}/>} />
             <Route  path='/sign-in' element={ <SignIn/>}/>
             <Route path='/sign-up' element={<SignUp/>}/>
         </Routes>
