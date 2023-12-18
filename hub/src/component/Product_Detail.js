@@ -1,0 +1,80 @@
+ const Product_Detail=[
+    {
+        id:1,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"Tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:2,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:3,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:4,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:4,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:5,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:6,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:7,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:8,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:9,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    },
+    {
+        id:10,
+        Title:"galaxy tab S6 lite 10.4 -inch",
+        Cat:"tablet",
+        price:"$17000",
+        img:'./images/watch-removebg-preview.png',
+    }
+]
+export default  Product_Detail
