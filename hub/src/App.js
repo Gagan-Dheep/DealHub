@@ -18,7 +18,7 @@ function App() {
     <>
       <BrowserRouter>
         <Nav/>
-        <Rout product={product}  detail={detail} view={view}/>
+        <Rout product={product}  detail={detail} view={view} close={close} setClose={setClose}/>
         {/* <Footer/> */}
       </BrowserRouter>
     </>

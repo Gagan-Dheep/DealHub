@@ -3,11 +3,14 @@ import Product_Detail from './component/Product_Detail'
 import {BsCartCheckFill} from 'react-icons/bs';
 import {AiOutlineEye} from 'react-icons/ai';
 import {AiOutlineHeart} from 'react-icons/ai';
+import { AiOutlineClose } from "react-icons/ai";
 import './product.css'
-const Product = ({product,detail,view}) => {
+const Product = ({product,detail,view,close,setClose}) => {
   return (
-    <>
+    <>{
+      close?
     <div className='product_details'>
+    <button onClick={()=>setClose(false)}><AiOutlineClose /></button>
       <div className='container'>
         {
           detail.map((e)=>{
@@ -28,7 +31,7 @@ const Product = ({product,detail,view}) => {
       )})
         }
       </div>
-    </div>
+    </div> :null}
       <div className='product'>
         <div className='container'>
           {
