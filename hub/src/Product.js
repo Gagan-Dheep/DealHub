@@ -10,8 +10,10 @@ const Product = ({product,detail,view,close,setClose}) => {
     <>{
       close?
     <div className='product_details'>
-    <button onClick={()=>setClose(false)}><AiOutlineClose /></button>
+
       <div className='container'>
+    <button onClick={()=>setClose(false)} className='closebtn'><AiOutlineClose /></button>
+
         {
           detail.map((e)=>{
       return(
@@ -23,8 +25,7 @@ const Product = ({product,detail,view,close,setClose}) => {
           <div className='detail'>
               <h4>{e.Cat}</h4>
               <h2>{e.Title}</h2>
-              <p>Module build failed (from ./node_modules/babel-loader/lib/index.js):</p>
-              <h3>{e.Price}</h3>
+              <h3>{e.price}</h3>
               <button>Add to Cart</button>
           </div>
         </div>

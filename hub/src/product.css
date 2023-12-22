@@ -52,3 +52,48 @@
     font-size: 22px;
     color: rgb(0, 0, 0);
 }
+
+.product_details{
+    position: fixed;
+    margin-top: 20px;
+    z-index: 1;
+    background: rgba(0,0,0,0.21);
+    width: 100%;
+    height:120% ;
+    margin-top: -20%;
+    padding: 40px 30px;
+}
+.product_details .container{
+    width: 700px;
+    height: 500px;
+    margin-top: 20%;
+    margin-left: 20%;
+    background: white;
+}
+.product_details .container .productbox{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.product_details .container .productbox .img-box>img{
+    width: 250px;
+}
+.product_details .container .productbox .detail h4{
+    font-size: 17px;
+    color: rgb(126, 125, 125);
+}
+.product_details .container .productbox .detail h2{
+    font-size: 26px;
+    color: rgb(15, 15, 15);
+}
+.product_details .container .productbox .detail h3{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.product_details .container .closebtn{
+    border: none;
+    font-size: 25px;
+    outline: none;
+    background: white;
+    cursor: pointer;
+}
