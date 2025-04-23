@@ -1,0 +1,84 @@
+/* Overall container */
+.sell-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  /* height: 100vh; */
+  /* background-color: #f4f4f9; */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.sell-page h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form container */
+.sell-page form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+.sell-page form div {
+  margin-bottom: 15px;
+}
+
+.sell-page label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.sell-page input[type="text"],
+.sell-page input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sell-page input[type="text"]:focus,
+.sell-page input[type="number"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Submit button */
+.sell-page button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.sell-page button:hover {
+  background-color: #45a049;
+}
+
+/* Optional - Add some spacing for the form and button */
+.sell-page form button {
+  margin-top: 20px;
+}

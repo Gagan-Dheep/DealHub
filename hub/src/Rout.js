@@ -1,24 +1,24 @@
-import React from 'react'
-import {Routes,Route} from 'react-router-dom'
-import Home from './Home'
-import SignIn from './component/SignIn'
-import SignUp from './component/SignUp'
-import Product from "./Product"
-// import NoNavFooterLayout from './NoNavFooterLayout';
-const Rout = ({detail,product,view,close,setClose}) => {
+// src/Rout.js
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import SignIn from './component/SignIn';
+import SignUp from './component/SignUp';
+import Product from "./Product";
+import SellPage from './component/SellPage'; // Import SellPage
+
+const Rout = ({ detail, product, view, close, setClose, setProduct }) => {
   return (
     <>
-        <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/product' element={<Product product={product} detail={detail} view={view} close={close} setClose={setClose}/>} />
-            <Route  path='/sign-in' element={ <SignIn/>}/>
-            <Route path='/sign-up' element={<SignUp/>}/>
-        </Routes>
-        
-          </>
-  )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product product={product} detail={detail} view={view} close={close} setClose={setClose} />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sell" element={<SellPage setProduct={setProduct} />} /> {/* Add route for SellPage */}
+      </Routes>
+    </>
+  );
 }
 
-export default Rout
-
-
+export default Rout;
