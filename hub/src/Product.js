@@ -1,15 +1,37 @@
 // src/Product.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BsCartCheckFill } from "react-icons/bs";
-import { AiOutlineEye } from "react-icons/ai";
-import { AiOutlineHeart } from "react-icons/ai";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineEye, AiOutlineHeart, AiOutlineClose } from "react-icons/ai";
 import "./product.css";
 
-const Product = ({ product, detail, view, close, setClose }) => {
+const Product = () => {
+  const [product, setProduct] = useState([]);
+  const [detail, setDetail] = useState([]);
+  const [close, setClose] = useState(false);
+
+  // Fetch products from backend
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const res = await fetch("http://localhost:5000/api/products");
+        const data = await res.json();
+        setProduct(data);
+      } catch (err) {
+        console.error("Error fetching products:", err);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  const view = (product) => {
+    setDetail([product]);
+    setClose(true);
+  };
+
   return (
     <>
-      {close ? (
+      {close && (
         <div className="product_details">
           <div className="container">
             <button onClick={() => setClose(false)} className="closebtn">
@@ -24,14 +46,14 @@ const Product = ({ product, detail, view, close, setClose }) => {
                 <div className="detail">
                   <h4>{e.Cat}</h4>
                   <h2>{e.Title}</h2>
-                  <h3>{e.price}</h3>
+                  <h3>₹{e.price}</h3>
                   <button>Add to Cart</button>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      ) : null}
+      )}
 
       <div className="product">
         <div className="container">
@@ -61,7 +83,7 @@ const Product = ({ product, detail, view, close, setClose }) => {
                 <div className="detail">
                   <p>{e.Cat}</p>
                   <h3>{e.Title}</h3>
-                  <h3>{e.price}</h3>
+                  <h3>₹{e.price}</h3>
                 </div>
               </div>
             ))

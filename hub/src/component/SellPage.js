@@ -1,13 +1,16 @@
 // src/component/SellPage.js
 import React, { useState } from "react";
-import "../style/SellPage.css"; // Assuming you have a CSS file for styling
-const SellPage = ({ setProduct }) => {
+import "../style/SellPage.css";
+
+const SellPage = () => {
   const [product, setProductState] = useState({
     Title: "",
     Cat: "",
     price: "",
     img: "",
   });
+
+  const [successMsg, setSuccessMsg] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,15 +20,31 @@ const SellPage = ({ setProduct }) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setProduct((prevProducts) => [...prevProducts, product]);
-    setProductState({
-      Title: "",
-      Cat: "",
-      price: "",
-      img: "",
-    });
+    try {
+      const res = await fetch("http://localhost:5000/api/products", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(product),
+      });
+
+      if (res.ok) {
+        setSuccessMsg("Product submitted successfully!");
+        setProductState({
+          Title: "",
+          Cat: "",
+          price: "",
+          img: "",
+        });
+      } else {
+        const errorData = await res.json();
+        setSuccessMsg("Error: " + errorData.error);
+      }
+    } catch (err) {
+      setSuccessMsg("Error submitting product. Please try again.");
+      console.error(err);
+    }
   };
 
   return (
@@ -73,6 +92,7 @@ const SellPage = ({ setProduct }) => {
           />
         </div>
         <button type="submit">Submit</button>
+        {successMsg && <p className="success-message">{successMsg}</p>}
       </form>
     </div>
   );
