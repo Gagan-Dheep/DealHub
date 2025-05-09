@@ -6,7 +6,8 @@ import SignIn from './component/SignIn';
 import SignUp from './component/SignUp';
 import Product from "./Product";
 import SellPage from './component/SellPage'; // Import SellPage
-
+import Cart from './component/Cart'; // Import Cart
+import ProtectedPage from "./component/Protected/ProtectedPage";
 const Rout = ({ detail, product, view, close, setClose, setProduct }) => {
   return (
     <>
@@ -16,6 +17,8 @@ const Rout = ({ detail, product, view, close, setClose, setProduct }) => {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sell" element={<SellPage setProduct={setProduct} />} /> {/* Add route for SellPage */}
+        <Route path="/cart" element={<Cart />} /> {/* Add route for Cart */}
+        <Route path="/protected" component={ProtectedPage} />
       </Routes>
     </>
   );

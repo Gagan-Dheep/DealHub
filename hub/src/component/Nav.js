@@ -40,6 +40,9 @@ const Nav = () => {
                             <li>
                                 <Link to='sign-up' className='link'>Sign-up</Link>
                             </li>
+                            <li>
+                                <Link to='cart' className='link'>Cart</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
