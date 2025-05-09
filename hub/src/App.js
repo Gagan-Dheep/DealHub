@@ -51,6 +51,7 @@ import Rout from './Rout';
 import { BrowserRouter } from 'react-router-dom';
 import CartProvider from './Context/CartContext';
 // import ProtectedPage from "./components/Protected/ProtectedPage";
+import { AuthProvider } from './component/AuthContext';
 
 function App() {
   const [product, setProduct] = useState([]);
@@ -63,6 +64,7 @@ function App() {
   };
 
   return (
+    <AuthProvider> 
     <CartProvider>
       <BrowserRouter>
         <Nav />
@@ -77,6 +79,7 @@ function App() {
         {/* <Footer /> */}
       </BrowserRouter>
     </CartProvider>
+    </AuthProvider> 
   );
 }
 
